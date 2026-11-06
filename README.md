@@ -25,7 +25,7 @@ cd gnome-accent-window-border
 ```
 
 The script compiles the settings schema, copies the extension to
-`~/.local/share/gnome-shell/extensions/accent-window-border@cbravo` and enables it.
+`~/.local/share/gnome-shell/extensions/accent-window-border@carlosbravoa.github.io` and enables it.
 
 On **Wayland**, log out and back in once so GNOME Shell discovers the new extension.
 (On X11 you can press <kbd>Alt</kbd>+<kbd>F2</kbd>, type `r` and press Enter instead.)
@@ -38,7 +38,7 @@ another logout on Wayland; changes to the preferences window don't.
 Open the preferences from the **Extensions** app (gear icon) or with:
 
 ```sh
-gnome-extensions prefs accent-window-border@cbravo
+gnome-extensions prefs accent-window-border@carlosbravoa.github.io
 ```
 
 | Setting | Default | Description |
@@ -52,7 +52,7 @@ gnome-extensions prefs accent-window-border@cbravo
 The same keys are available from the command line:
 
 ```sh
-D=~/.local/share/gnome-shell/extensions/accent-window-border@cbravo/schemas
+D=~/.local/share/gnome-shell/extensions/accent-window-border@carlosbravoa.github.io/schemas
 S=org.gnome.shell.extensions.accent-window-border
 gsettings --schemadir $D set $S border-width 3
 gsettings --schemadir $D set $S use-accent-color false
@@ -76,7 +76,7 @@ user confirms.
 ## Troubleshooting
 
 - **No border after installing:** log out and back in (Wayland), then check
-  `gnome-extensions info accent-window-border@cbravo` shows `State: ACTIVE`.
+  `gnome-extensions info accent-window-border@carlosbravoa.github.io` shows `State: ACTIVE`.
 - **"Extension doesn't have preferences":** the running shell scanned the extension before
   `prefs.js` existed. Log out and back in.
 - **Errors:** `journalctl -b /usr/bin/gnome-shell | grep -i accent`
@@ -85,8 +85,8 @@ user confirms.
 ## Uninstall
 
 ```sh
-gnome-extensions disable accent-window-border@cbravo
-rm -rf ~/.local/share/gnome-shell/extensions/accent-window-border@cbravo
+gnome-extensions disable accent-window-border@carlosbravoa.github.io
+rm -rf ~/.local/share/gnome-shell/extensions/accent-window-border@carlosbravoa.github.io
 ```
 
 ## License

@@ -1,5 +1,5 @@
 {
-  "uuid": "accent-window-border@cbravo",
+  "uuid": "accent-window-border@carlosbravoa.github.io",
   "name": "Accent Window Border",
   "description": "Draws a thin border in the system accent color around the focused window.",
   "shell-version": ["46", "47", "48", "49", "50"],

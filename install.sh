@@ -1,7 +1,7 @@
 #!/bin/sh
 # Installs the Accent Window Border extension for the current user.
 set -e
-UUID=accent-window-border@cbravo
+UUID=accent-window-border@carlosbravoa.github.io
 SRC="$(cd "$(dirname "$0")" && pwd)/$UUID"
 DEST="$HOME/.local/share/gnome-shell/extensions/$UUID"
 
