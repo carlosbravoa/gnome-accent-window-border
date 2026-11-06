@@ -1,0 +1,7 @@
+/* -st-accent-color follows Settings > Appearance > Accent color
+   (Ubuntu's St maps it to the Yaru palette). */
+.accent-window-border {
+  border-style: solid;
+  border-color: -st-accent-color;
+  background-color: transparent;
+}

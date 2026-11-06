@@ -1,0 +1,9 @@
+{
+  "uuid": "accent-window-border@cbravo",
+  "name": "Accent Window Border",
+  "description": "Draws a thin border in the system accent color around the focused window.",
+  "shell-version": ["46", "47", "48", "49", "50"],
+  "url": "https://github.com/carlosbravoa/gnome-accent-window-border",
+  "settings-schema": "org.gnome.shell.extensions.accent-window-border",
+  "version": 1
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.accent-window-border"
+          path="/org/gnome/shell/extensions/accent-window-border/">
+    <key name="border-width" type="i">
+      <range min="1" max="10"/>
+      <default>2</default>
+      <summary>Border width in pixels</summary>
+    </key>
+    <key name="border-radius" type="i">
+      <range min="0" max="32"/>
+      <default>12</default>
+      <summary>Corner radius in pixels (matches libadwaita windows by default)</summary>
+    </key>
+    <key name="use-accent-color" type="b">
+      <default>true</default>
+      <summary>Follow the system accent color</summary>
+    </key>
+    <key name="custom-color" type="s">
+      <default>'#ffffff'</default>
+      <summary>Border color used when use-accent-color is false (any CSS color)</summary>
+    </key>
+    <key name="show-when-maximized" type="b">
+      <default>false</default>
+      <summary>Draw the border on maximized/tiled-full windows</summary>
+    </key>
+  </schema>
+</schemalist>
